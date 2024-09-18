@@ -1,0 +1,120 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Section */
+.todo-header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Input Area Styling */
+.todo-input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#todo-input:focus {
+    border-color: #ff5a5f;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+button span {
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #ff4a4a;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+/* To-Do List Items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ff6b6b #f1f1f1;
+}
+
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #ff6b6b;
+    border-radius: 10px;
+}
+
+li {
+    background-color: #ffecec;
+}
